@@ -16,6 +16,7 @@ GnssCompass::GnssCompass():Node("gnss_compass")
   this->declare_parameter("input_gnss_type",input_gnss_type);
   this->declare_parameter("min_gnss_status",min_gnss_status_);
   this->declare_parameter("max_gnss_status",max_gnss_status_);
+  this->declare_parameter("fix_covariance_thershold",fix_covariance_thershold_);
   this->declare_parameter("time_threshold",time_thresshold_);
   this->declare_parameter("yaw_bias",yaw_bias_);
   this->declare_parameter("use_simple_roswarn",use_simple_roswarn_);
